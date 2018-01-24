@@ -6,6 +6,7 @@ RUN apk update && apk add \
   perl-utils \
   curl \
   gcc \
+  make \
   msmtp \
   perl-term-readkey \
   perl-cache-simple-timedexpiry \
