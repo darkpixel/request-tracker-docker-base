@@ -19,7 +19,13 @@ RUN apk update && apk add \
   perl-dbd-pg \
   mariadb-common \
   mariadb-client-libs \
+  perl-json \
+  perl-gd \
+  perl-gdgraph \
   perl-dbd-mysql \
+  perl-graphviz \
+  perl-ipc-run \
+  perl-graphviz \
   perl-sub-exporter-progressive \
   perl-devel-globaldestruction \
   perl-devel-stacktrace \
