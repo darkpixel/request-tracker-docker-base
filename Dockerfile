@@ -3,7 +3,10 @@ LABEL maintianer="Aaron C. de Bruyn <aaron@heyaaron.com>"
 
 RUN apk update && apk add \
   spawn-fcgi \
+  perl-dev \
   perl-utils \
+  glib \
+  libc-dev \
   curl \
   gcc \
   make \
@@ -202,6 +205,8 @@ RUN apk update && apk add \
   perl-css-minifier-xs \
   perl-net-ip \
   perl-javascript-minifier-xs \
+  perl-encode \
+  perl-encode-dev \
   libpng \
   freetype \
   fontconfig \
