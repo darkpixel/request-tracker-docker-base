@@ -8,6 +8,10 @@ RUN apk update && apk add \
   glib \
   gettext \
   msmtp \
+  dcron \
+  tini \
+  fetchmail \
+  ca-certificates
   libc-dev \
   curl \
   gcc \
