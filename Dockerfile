@@ -6,6 +6,8 @@ RUN apk update && apk add \
   perl-dev \
   perl-utils \
   glib \
+  gettext \
+  msmtp \
   libc-dev \
   curl \
   gcc \
