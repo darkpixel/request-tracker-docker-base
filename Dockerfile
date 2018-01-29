@@ -11,7 +11,7 @@ RUN apk update && apk add \
   dcron \
   tini \
   fetchmail \
-  ca-certificates
+  ca-certificates \
   libc-dev \
   curl \
   gcc \
