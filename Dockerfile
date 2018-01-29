@@ -8,6 +8,7 @@ RUN apk update && apk add \
   glib \
   gettext \
   msmtp \
+  dcron \
   libc-dev \
   curl \
   gcc \
