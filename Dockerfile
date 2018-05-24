@@ -224,5 +224,9 @@ RUN apk update && apk add \
   Encode \
   HTML::FormatText::WithLinks::AndTables \
   HTML::FormatExternal \
+  Set::Infinite \
+  DateTime::Event::ICal \
+  DateTime::Event::Recurrence \
+  DateTime::Set \
   Mozilla::CA \
   && rm -rf /root/.cpan
