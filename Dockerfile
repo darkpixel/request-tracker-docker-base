@@ -223,5 +223,6 @@ RUN apk update && apk add \
   Email::Address \
   Encode \
   HTML::FormatText::WithLinks::AndTables \
+  HTML::FormatExternal \
   Mozilla::CA \
   && rm -rf /root/.cpan
