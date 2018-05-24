@@ -3,6 +3,7 @@ LABEL maintianer="Aaron C. de Bruyn <aaron@heyaaron.com>"
 
 RUN apk update && apk add \
   spawn-fcgi \
+  w3m \
   perl-dev \
   perl-utils \
   glib \
