@@ -219,6 +219,7 @@ RUN apk update && apk add \
   fontconfig \
   ttf-droid \
   && PERL_MM_USE_DEFAULT=1 cpan install \
+  Plack::Handler::Starman \
   Business::Hours \
   Data::Page::Pageset \
   Email::Address \
