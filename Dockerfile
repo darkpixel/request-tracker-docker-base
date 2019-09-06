@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:3.10
 LABEL maintianer="Aaron C. de Bruyn <aaron@heyaaron.com>"
 
 RUN apk update && apk add \
@@ -28,12 +28,13 @@ RUN apk update && apk add \
   libpq \
   perl-dbd-pg \
   mariadb-common \
-  mariadb-client-libs \
+  mariadb-client \
   perl-json \
   perl-gd \
   perl-gdgraph \
   perl-dbd-mysql \
   perl-graphviz \
+  perl-ldap \
   perl-ipc-run \
   perl-graphviz \
   perl-sub-exporter-progressive \
