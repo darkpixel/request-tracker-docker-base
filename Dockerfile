@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:3.10
 LABEL maintianer="Aaron C. de Bruyn <aaron@heyaaron.com>"
 
 RUN apk update && apk add \
