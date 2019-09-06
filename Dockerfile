@@ -28,7 +28,7 @@ RUN apk update && apk add \
   libpq \
   perl-dbd-pg \
   mariadb-common \
-  mariadb-client-libs \
+  mariadb-client \
   perl-json \
   perl-gd \
   perl-gdgraph \
