@@ -34,6 +34,7 @@ RUN apk update && apk add \
   perl-gdgraph \
   perl-dbd-mysql \
   perl-graphviz \
+  perl-ldap \
   perl-ipc-run \
   perl-graphviz \
   perl-sub-exporter-progressive \
