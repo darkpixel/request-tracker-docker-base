@@ -1,7 +1,7 @@
-FROM alpine:3.10
+FROM alpine:3.13.5
 LABEL maintianer="Aaron C. de Bruyn <aaron@heyaaron.com>"
 
-RUN apk update && apk add \
+RUN apk update && apk add --no-cache \
   spawn-fcgi \
   w3m \
   perl-dev \
@@ -13,9 +13,11 @@ RUN apk update && apk add \
   tini \
   fetchmail \
   ca-certificates \
+  ca-certificates-cacert \
   libc-dev \
   curl \
   gcc \
+  g++ \
   make \
   msmtp \
   perl-term-readkey \
@@ -69,12 +71,13 @@ RUN apk update && apk add \
   perl-text-template \
   perl-text-wrapper \
   perl-time-hires \
-  perl-time-modules \
   perl-sub-uplevel \
   perl-test-exception \
   perl-tree-simple \
   perl-universal-require \
-  expat \
+  expat
+
+RUN apk add --no-cache \
   perl-xml-parser \
   perl-cpan-meta-check \
   perl-test-fatal \
@@ -130,7 +133,6 @@ RUN apk update && apk add \
   perl-mime-types \
   perl-html-tree \
   perl-font-afm \
-  perl-html-format \
   perl-html-rewriteattributes \
   perl-cgi \
   perl-error \
@@ -152,7 +154,8 @@ RUN apk update && apk add \
   perl-http-body \
   perl-test-sharedfork \
   perl-test-tcp \
-  tzdata \
+  tzdata
+RUN apk add --no-cache \
   perl-posix-strftime-compiler \
   perl-apache-logformat-compiler \
   perl-hash-multivalue \
@@ -213,20 +216,30 @@ RUN apk update && apk add \
   perl-css-minifier-xs \
   perl-net-ip \
   perl-javascript-minifier-xs \
-  perl-encode \
-  perl-encode-dev \
+  perl-dbix-searchbuilder \
   libpng \
   freetype \
   fontconfig \
   ttf-droid \
-  && PERL_MM_USE_DEFAULT=1 cpan install \
+  perl-encode-hanextra \
+  perl-time-parsedate
+
+RUN PERL_MM_USE_DEFAULT=1 cpan install \
   Plack::Handler::Starman \
   Business::Hours \
   Data::Page::Pageset \
   Email::Address \
   Encode \
+  Encode::Detect::Detector \
   HTML::FormatText::WithLinks::AndTables \
   HTML::FormatExternal \
+  HTML::Gumbo \
+  Module::Path \
+  MooseX::NonMoose \
+  MooseX::Role::Parameterized \
+  Path::Dispatcher \
+  Text::WordDiff \
+  Web::Machine \
   Set::Infinite \
   DateTime::Event::ICal \
   DateTime::Event::Recurrence \
