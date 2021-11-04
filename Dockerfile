@@ -245,4 +245,6 @@ RUN PERL_MM_USE_DEFAULT=1 cpan install \
   DateTime::Event::Recurrence \
   DateTime::Set \
   Mozilla::CA \
+  Net::Domain::TLD \
+  Parse::BooleanLogic \
   && rm -rf /root/.cpan
