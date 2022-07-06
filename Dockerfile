@@ -53,6 +53,7 @@ RUN apk update && apk add --no-cache \
   perl-params-validate \
   perl-exporter-tiny \
   perl-list-moreutils \
+  perl-parallel-forkmanager \
   perl-dist-checkconflicts \
   perl-log-dispatch \
   perl-io-stringy \
@@ -225,6 +226,7 @@ RUN apk add --no-cache \
   perl-time-parsedate
 
 RUN PERL_MM_USE_DEFAULT=1 cpan install \
+  Parallel::ForkManager \
   Plack::Handler::Starman \
   Business::Hours \
   Data::Page::Pageset \
@@ -245,4 +247,6 @@ RUN PERL_MM_USE_DEFAULT=1 cpan install \
   DateTime::Event::Recurrence \
   DateTime::Set \
   Mozilla::CA \
+  Net::Domain::TLD \
+  Parse::BooleanLogic \
   && rm -rf /root/.cpan
