@@ -1,4 +1,10 @@
 
+v0.9.6 / 2022-07-06
+==================
+
+  * Add Parallel:ForkManager for RT 5.0.2
+  * Include CPAN modules used by RTIR
+
 v0.9.5 / 2021-08-19
 ==================
 
