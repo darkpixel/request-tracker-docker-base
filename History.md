@@ -1,4 +1,9 @@
 
+v0.9.8 / 2023-01-11
+==================
+
+  * Use CPAN version of DBIx::SearchBuilder because apk is out of date
+
 v0.9.7 / 2023-01-11
 ==================
 
