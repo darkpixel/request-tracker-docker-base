@@ -217,7 +217,6 @@ RUN apk add --no-cache \
   perl-css-minifier-xs \
   perl-net-ip \
   perl-javascript-minifier-xs \
-  perl-dbix-searchbuilder \
   libpng \
   freetype \
   fontconfig \
@@ -249,4 +248,5 @@ RUN PERL_MM_USE_DEFAULT=1 cpan install \
   Mozilla::CA \
   Net::Domain::TLD \
   Parse::BooleanLogic \
+  DBIx::SearchBuilder \
   && rm -rf /root/.cpan
